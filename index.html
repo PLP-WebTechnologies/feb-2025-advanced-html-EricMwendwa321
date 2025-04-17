@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple webpage demonstrating HTML5 structure">
+    <meta name="description" content="A simple webpage demonstrating HTML5 structure with multimedia and form elements">
     <title>My First HTML5 Page</title>
 </head>
 <body>
@@ -15,35 +15,167 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#register">Register</a></li>
         </ul>
     </nav>
     
     <main>
+        <!-- Home Section -->
         <section id="home">
             <h2>Home</h2>
             <p>In a fast-paced world filled with distractions, we provide a space for reflection, learning, and self-discovery. Whether you're starting your mindfulness journey or looking for new ways to improve your daily life, we are here to guide and inspire you.</p>
+            
+            <!-- External Image -->
+            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="Mindfulness Image" width="600">
         </section>
         
+        <!-- About Section -->
         <section id="about">
             <h2>About</h2>
-            <p> Welcome to Mindful Mutua
-Explore. Learn. Grow.
+            <p>Welcome to Mindful Mutua</p>
+            <p>Explore. Learn. Grow.</p>
+            <p>At Mindful Mutua, we dive into mindfulness, personal growth, and wellness practices to help you lead a balanced and fulfilling life. Whether you're looking for meditation tips, productivity hacks, or ways to cultivate inner peace, you're in the right place!</p>
 
-At Mindful Mutua, we dive into mindfulness, personal growth, and wellness practices to help you lead a balanced and fulfilling life. Whether you're looking for meditation tips, productivity hacks, or ways to cultivate inner peace, you're in the right place!</p>
+            <!-- Unordered List -->
+            <p>What You’ll Find Here:</p>
+            <ul>
+                <li>Mindfulness</li>
+                <li>Self-Improvement Tips</li>
+                <li>Stress Management Techniques</li>
+                <li>Daily Habits for a Healthier Mindset</li>
+            </ul>
 
-<p>What You’ll Find Here:
-<ul><li>Mindfulness</li>
-<li>Self-Improvement Tips</li>
-<li>Stress Management Techniques</li>
-<li>Daily Habits for a Healthier Mindset</li></ul>
-</p>
+            <!-- Ordered List with Roman Numerals -->
+            <p>Our Core Objectives:</p>
+            <ol type="I">
+                <li>Promote Mindfulness Education</li>
+                <li>Encourage Daily Practice</li>
+                <li>Provide Tools for Inner Peace</li>
+            </ol>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section id="resources">
+            <h2>Multimedia Resources</h2>
+
+            <!-- Audio -->
+            <p>Listen to our guided meditation:</p>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Video -->
+            <p>Watch this short introduction to mindfulness:</p>
+            <video width="600" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Contacts Table -->
+        <section id="contacts">
+            <h2>Our Team Contacts</h2>
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Mutua</td>
+                        <td>Nairobi, Kenya</td>
+                        <td>+254700123456</td>
+                        <td>alice@mindfulmutua.com</td>
+                    </tr>
+                    <tr>
+                        <td>Brian Otieno</td>
+                        <td>Mombasa, Kenya</td>
+                        <td>+254711654321</td>
+                        <td>brian@mindfulmutua.com</td>
+                    </tr>
+                    <tr>
+                        <td>Clara Wanjiru</td>
+                        <td>Kisumu, Kenya</td>
+                        <td>+254722345678</td>
+                        <td>clara@mindfulmutua.com</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Mwangi</td>
+                        <td>Nakuru, Kenya</td>
+                        <td>+254733456789</td>
+                        <td>daniel@mindfulmutua.com</td>
+                    </tr>
+                    <tr>
+                        <td>Eva Kamau</td>
+                        <td>Eldoret, Kenya</td>
+                        <td>+254744567890</td>
+                        <td>eva@mindfulmutua.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Register</h2>
+            <form action="#" method="post">
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required><br><br>
+
+                <!-- Date -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <!-- Dropdown -->
+                <label for="interest">Area of Interest:</label>
+                <select id="interest" name="interest" required>
+                    <option value="">Select an option</option>
+                    <option value="mindfulness">Mindfulness</option>
+                    <option value="productivity">Productivity</option>
+                    <option value="wellness">Wellness</option>
+                    <option value="stress">Stress Management</option>
+                </select><br><br>
+
+                <!-- Radio Buttons -->
+                <p>Preferred Contact Method:</p>
+                <input type="radio" id="email_contact" name="contact_method" value="email" required>
+                <label for="email_contact">Email</label><br>
+                <input type="radio" id="phone_contact" name="contact_method" value="phone">
+                <label for="phone_contact">Phone</label><br><br>
+
+                <!-- Checkboxes -->
+                <p>Subscribe to:</p>
+                <input type="checkbox" id="newsletter" name="subscription" value="newsletter">
+                <label for="newsletter">Newsletter</label><br>
+                <input type="checkbox" id="events" name="subscription" value="events">
+                <label for="events">Event Updates</label><br><br>
+
+                <!-- Submit -->
+                <button type="submit">Register</button>
+            </form>
         </section>
     </main>
     
     <footer>
-        <p>Contact us at: <a href="mindfulmutua@example.com">info@mindfulmutua.com</a></p>
+        <p>Contact us at: <a href="mailto:info@mindfulmutua.com">info@mindfulmutua.com</a></p>
         <p>&copy; 2025 Mindful Mutua</p>
     </footer>
 </body>
 </html>
+
