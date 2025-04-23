@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple webpage demonstrating HTML5 structure with multimedia and form elements">
     <title>My First HTML5 Page</title>
+    <link rel="stylesheet" href="Mystyle.css">
 </head>
 <body>
     <header>
@@ -22,23 +23,20 @@
     </nav>
     
     <main>
-        <!-- Home Section -->
-        <section id="home">
+                <section id="home" class="section-container">
             <h2>Home</h2>
             <p>In a fast-paced world filled with distractions, we provide a space for reflection, learning, and self-discovery. Whether you're starting your mindfulness journey or looking for new ways to improve your daily life, we are here to guide and inspire you.</p>
             
-            <!-- External Image -->
-            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="Mindfulness Image" width="600">
+                        <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="Mindfulness Image" width="600">
         </section>
         
-        <!-- About Section -->
-        <section id="about">
+                <section id="about" class="section-container">
             <h2>About</h2>
             <p>Welcome to Mindful Mutua</p>
             <p>Explore. Learn. Grow.</p>
             <p>At Mindful Mutua, we dive into mindfulness, personal growth, and wellness practices to help you lead a balanced and fulfilling life. Whether you're looking for meditation tips, productivity hacks, or ways to cultivate inner peace, you're in the right place!</p>
 
-            <!-- Unordered List -->
+            
             <p>What You’ll Find Here:</p>
             <ul>
                 <li>Mindfulness</li>
@@ -47,7 +45,7 @@
                 <li>Daily Habits for a Healthier Mindset</li>
             </ul>
 
-            <!-- Ordered List with Roman Numerals -->
+            
             <p>Our Core Objectives:</p>
             <ol type="I">
                 <li>Promote Mindfulness Education</li>
@@ -56,12 +54,10 @@
             </ol>
         </section>
 
-        <!-- Multimedia Section -->
-        <section id="resources">
+         <section id="resources" class="section-container">
             <h2>Multimedia Resources</h2>
 
-            <!-- Audio -->
-            <p>Listen to our guided meditation:</p>
+             <p>Listen to our guided meditation:</p>
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -76,7 +72,7 @@
         </section>
 
         <!-- Contacts Table -->
-        <section id="contacts">
+        <section id="contacts" class="section-container">
             <h2>Our Team Contacts</h2>
             <table border="1" cellpadding="10">
                 <thead>
@@ -123,7 +119,7 @@
         </section>
 
         <!-- Registration Form -->
-        <section id="register">
+        <section id="register" class="section-container">
             <h2>Register</h2>
             <form action="#" method="post">
                 <!-- Name -->
