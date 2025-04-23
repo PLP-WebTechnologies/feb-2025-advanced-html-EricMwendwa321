@@ -5,13 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple webpage demonstrating HTML5 structure with multimedia and form elements">
     <title>My First HTML5 Page</title>
-    <link rel="stylesheet" href="Mystyle.css">
+    <style>
+        /* General Reset and Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background: #0055a5;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0.5rem 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .section-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label, form input, form select, form button, form p {
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            margin-top: 2rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1025px) {
+            main {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Mindful Mutua</h1>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -21,124 +136,62 @@
             <li><a href="#register">Register</a></li>
         </ul>
     </nav>
-    
+
     <main>
-                <section id="home" class="section-container">
+        <section id="home" class="section-container">
             <h2>Home</h2>
-            <p>In a fast-paced world filled with distractions, we provide a space for reflection, learning, and self-discovery. Whether you're starting your mindfulness journey or looking for new ways to improve your daily life, we are here to guide and inspire you.</p>
-            
-                        <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="Mindfulness Image" width="600">
+            <p>In a fast-paced world filled with distractions, we provide a space for reflection, learning, and self-discovery...</p>
+            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg" alt="Mindfulness Image">
         </section>
-        
-                <section id="about" class="section-container">
+
+        <section id="about" class="section-container">
             <h2>About</h2>
             <p>Welcome to Mindful Mutua</p>
-            <p>Explore. Learn. Grow.</p>
-            <p>At Mindful Mutua, we dive into mindfulness, personal growth, and wellness practices to help you lead a balanced and fulfilling life. Whether you're looking for meditation tips, productivity hacks, or ways to cultivate inner peace, you're in the right place!</p>
-
-            
-            <p>What You’ll Find Here:</p>
             <ul>
                 <li>Mindfulness</li>
                 <li>Self-Improvement Tips</li>
                 <li>Stress Management Techniques</li>
                 <li>Daily Habits for a Healthier Mindset</li>
             </ul>
-
-            
-            <p>Our Core Objectives:</p>
-            <ol type="I">
-                <li>Promote Mindfulness Education</li>
-                <li>Encourage Daily Practice</li>
-                <li>Provide Tools for Inner Peace</li>
-            </ol>
         </section>
 
-         <section id="resources" class="section-container">
+        <section id="resources" class="section-container">
             <h2>Multimedia Resources</h2>
-
-             <p>Listen to our guided meditation:</p>
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-
-            <!-- Video -->
-            <p>Watch this short introduction to mindfulness:</p>
-            <video width="600" controls>
+            <video controls>
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </section>
 
-        <!-- Contacts Table -->
         <section id="contacts" class="section-container">
             <h2>Our Team Contacts</h2>
-            <table border="1" cellpadding="10">
+            <table>
                 <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Mobile</th>
-                        <th>Email</th>
-                    </tr>
+                    <tr><th>Name</th><th>Address</th><th>Mobile</th><th>Email</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Alice Mutua</td>
-                        <td>Nairobi, Kenya</td>
-                        <td>+254700123456</td>
-                        <td>alice@mindfulmutua.com</td>
-                    </tr>
-                    <tr>
-                        <td>Brian Otieno</td>
-                        <td>Mombasa, Kenya</td>
-                        <td>+254711654321</td>
-                        <td>brian@mindfulmutua.com</td>
-                    </tr>
-                    <tr>
-                        <td>Clara Wanjiru</td>
-                        <td>Kisumu, Kenya</td>
-                        <td>+254722345678</td>
-                        <td>clara@mindfulmutua.com</td>
-                    </tr>
-                    <tr>
-                        <td>Daniel Mwangi</td>
-                        <td>Nakuru, Kenya</td>
-                        <td>+254733456789</td>
-                        <td>daniel@mindfulmutua.com</td>
-                    </tr>
-                    <tr>
-                        <td>Eva Kamau</td>
-                        <td>Eldoret, Kenya</td>
-                        <td>+254744567890</td>
-                        <td>eva@mindfulmutua.com</td>
-                    </tr>
+                    <tr><td>Alice Mutua</td><td>Nairobi, Kenya</td><td>+254700123456</td><td>alice@mindfulmutua.com</td></tr>
+                    <tr><td>Brian Otieno</td><td>Mombasa, Kenya</td><td>+254711654321</td><td>brian@mindfulmutua.com</td></tr>
+                    <tr><td>Clara Wanjiru</td><td>Kisumu, Kenya</td><td>+254722345678</td><td>clara@mindfulmutua.com</td></tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- Registration Form -->
         <section id="register" class="section-container">
             <h2>Register</h2>
             <form action="#" method="post">
-                <!-- Name -->
                 <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
-
-                <!-- Email -->
+                <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-                <!-- Password -->
+                <input type="email" id="email" name="email" required>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required><br><br>
-
-                <!-- Date -->
+                <input type="password" id="password" name="password" minlength="6" required>
                 <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required><br><br>
-
-                <!-- Dropdown -->
+                <input type="date" id="dob" name="dob" required>
                 <label for="interest">Area of Interest:</label>
                 <select id="interest" name="interest" required>
                     <option value="">Select an option</option>
@@ -146,30 +199,24 @@
                     <option value="productivity">Productivity</option>
                     <option value="wellness">Wellness</option>
                     <option value="stress">Stress Management</option>
-                </select><br><br>
-
-                <!-- Radio Buttons -->
+                </select>
                 <p>Preferred Contact Method:</p>
                 <input type="radio" id="email_contact" name="contact_method" value="email" required>
-                <label for="email_contact">Email</label><br>
+                <label for="email_contact">Email</label>
                 <input type="radio" id="phone_contact" name="contact_method" value="phone">
-                <label for="phone_contact">Phone</label><br><br>
-
-                <!-- Checkboxes -->
+                <label for="phone_contact">Phone</label>
                 <p>Subscribe to:</p>
-                <input type="checkbox" id="newsletter" name="subscription" value="newsletter">
-                <label for="newsletter">Newsletter</label><br>
-                <input type="checkbox" id="events" name="subscription" value="events">
-                <label for="events">Event Updates</label><br><br>
-
-                <!-- Submit -->
+                <input type="checkbox" id="newsletter" name="subscription[]" value="newsletter">
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox" id="events" name="subscription[]" value="events">
+                <label for="events">Event Updates</label>
                 <button type="submit">Register</button>
             </form>
         </section>
     </main>
-    
+
     <footer>
-        <p>Contact us at: <a href="mailto:info@mindfulmutua.com">info@mindfulmutua.com</a></p>
+        <p>Contact us at: <a href="mailto:info@mindfulmutua.com" style="color: #ccc">info@mindfulmutua.com</a></p>
         <p>&copy; 2025 Mindful Mutua</p>
     </footer>
 </body>
