@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MaliNguo Laundry - HTML5 Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MaliNguo Laundry Services</h1>
+    <p>Clean Clothes, Less Time, More Savings!</p>
+  </header>
+
+  <section>
+    <h2>Our Premium Services</h2>
+    <ol type="I">
+      <li>Express Wash</li>
+      <li>Iron & Fold</li>
+      <li>Pickup & Delivery</li>
+      <li>Dry Cleaning</li>
+      <li>Stain Removal</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>See Us in Action</h2>
+    <img src="https://images.pexels.com/photos/3616764/pexels-photo-3616764.jpeg" 
+         alt="Laundry Service in Action" 
+         width="100%" />
+  </section>
+
+  <section>
+    <h2>Contact Our Branches</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>Upperhill, Nairobi</td>
+          <td>0712345678</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Jane Kimani</td>
+          <td>Kilimani, Nairobi</td>
+          <td>0798765432</td>
+          <td>jane@example.com</td>
+        </tr>
+        <tr>
+          <td>Peter Otieno</td>
+          <td>Westlands, Nairobi</td>
+          <td>0700111222</td>
+          <td>peter@example.com</td>
+        </tr>
+        <tr>
+          <td>Linda Wairimu</td>
+          <td>South B, Nairobi</td>
+          <td>0722333444</td>
+          <td>linda@example.com</td>
+        </tr>
+        <tr>
+          <td>David Njoroge</td>
+          <td>CBD, Nairobi</td>
+          <td>0733444555</td>
+          <td>david@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Register for a Free Pickup</h2>
+    <form action="#" method="post">
+
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="password">Password *</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+
+      <label for="date">Preferred Pickup Date *</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="service">Select Laundry Service *</label>
+      <select id="service" name="service" required>
+        <option value="">--Choose One--</option>
+        <option value="express">Express Wash</option>
+        <option value="dryclean">Dry Cleaning</option>
+        <option value="folding">Iron & Fold</option>
+      </select>
+
+      <p>Preferred Pickup Time *</p>
+      <label><input type="radio" name="time" value="morning" required /> Morning</label>
+      <label><input type="radio" name="time" value="afternoon" /> Afternoon</label>
+      <label><input type="radio" name="time" value="evening" /> Evening</label>
+
+      <p>Add-Ons (Optional)</p>
+      <label><input type="checkbox" name="addons" value="perfume" /> Add Fabric Perfume</label>
+      <label><input type="checkbox" name="addons" value="delicate" /> Handle as Delicates</label>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Listen to our Jingle 🎵</h2>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Watch Our Process 📹</h2>
+    <video width="100%" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+</body>
+</html>
